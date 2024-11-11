@@ -1,0 +1,100 @@
+.btn{
+    background-color:blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    background-color: rgb(250, 191, 103);
+    transform: scale(1.2);
+}
+
+.svg{
+    width: 15px;
+    height: 15px;
+}
+
+.container {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    width: 500px;
+    height: 600px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#message {
+    border: solid 4px rgb(98, 200, 248);
+    padding: 8px;
+    text-align: start;
+    width: 280px;
+}
+
+.button {
+    background-color: rgb(98, 200, 248);
+    padding: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: rgb(66, 172, 220);
+    transform: scale(1.1);
+}
+
+.chat{
+    border: solid 4px rgb(98, 200, 248);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.chat::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#message:focus {
+    outline: none;
+}
+
+span {
+    border: solid 4px rgb(98, 200, 248);
+    padding: 10px;
+    width: 100px;
+    word-wrap: break-word;
+    max-width: 120%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+span.sent {
+    background-color: rgb(152, 220, 251);
+    margin-left: auto;
+    margin-right: 0;
+}
+
+span.received {
+    background-color: #ffffff;
+    margin-left: 0;
+    margin-right: auto;
+}
